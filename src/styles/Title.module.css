@@ -1,0 +1,30 @@
+.title {
+    width: 100%;
+}
+
+.title h3 {
+    position: relative;
+    font-size: 28px;
+    color: var(--secondary-light-gray);
+    margin-bottom: 40px;
+    font-family: InterBold;
+}
+
+.title h3::before {
+    content: attr(data-count);
+    height: 20px;
+    font-family: monospace;
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.title h3::after{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 16px;
+    border-top: 0.01rem solid var(--primary-color);
+}

@@ -1,0 +1,98 @@
+
+
+.container {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 64px;
+    align-items: center;
+    background-color: var(--bg-color);
+    /* background-color: transparent; */
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.image {
+    display: flex;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    transition: transform 300ms ease;
+}
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 300ms ease;
+}
+
+.navContainer {
+    display: flex;
+    width: auto;
+    margin-right: 164px;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: center; 
+    list-style: none;
+    color: var(--navItems-color);
+    font-family: monospace;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav li {
+    position: relative;
+    width: 128px;
+    transition: all 300ms;
+    counter-increment: item 1;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: var(--navItems-color);
+    transition: 300ms all;
+}
+
+.nav li a:hover, .image img:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: all 300ms;
+    color: var(--primary-color);
+}
+
+.nav a::before {
+    content: "0" counter(item) ".";
+    color: var(--primary-color);
+    margin-left: -64px;
+    padding: 0px 5px;
+}
+
+.btn {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-top-left-radius: none;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 14px;
+    transition: 300ms all;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #bf80ff33;
+    transition: 300ms all;
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: InterBold;
+    src: url('../assets/fonts/Inter/static/Inter-Bold.ttf');
+}
+
+.container {
+    min-height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 80px;
+}
+
+.content {
+    display: flex;
+}
+
+.leftside {
+    width: 50%;
+}
+
+.leftside p {
+    width: 100%;
+    color: var(--navItems-color);
+    margin-top: 10px;
+    word-spacing: 2px;
+    line-height: 1.4rem;
+}
+
+.leftside ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    width: 80%;
+    height: 100px;
+    color: var(--navItems-color);
+    padding: 0px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: monospace;
+}
+
+.leftside ul li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.leftside ul li::before{
+    content: "►";
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.rightside {
+    position: relative;
+    width: calc(1202px/4);
+    height: calc(1316px/4);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.rightside img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%) contrast(1);
+    mix-blend-mode: multiply;
+    transition: all 300ms ease-in;
+    border-radius: 6px;
+    z-index: 3;
+    transition-delay: 100ms;
+}
+
+.rightside img:hover  {
+    filter: none;
+    mix-blend-mode: normal;
+    transition: all 300ms ease-out ;
+    transition-delay: 100ms;
+}
+
+.rightside::after{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    content: "";
+    border: 2px solid var(--primary-color);
+    mix-blend-mode: normal;
+    border-radius: inherit;
+    transform: translateX(20px) translateY(20px);
+    transition: 300ms ease-in-out;
+}
+
+.rightside:hover::after{
+    transform: translateX(15px) translateY(15px);
+    transition: 300ms ease-in-out;
+}
+
+
+

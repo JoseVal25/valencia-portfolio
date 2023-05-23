@@ -1,0 +1,45 @@
+.container {
+    position: fixed;
+
+    width: 64px;
+    margin-right: 64px;
+    right: 0;
+    top: 54%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 82px;
+    
+}
+
+.container a {
+    display: block;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--big-text-color);
+    /* margin-right: 90px; */
+    transition: 300ms all;
+}
+
+.container::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 68px;
+    border-top: 1px solid var(--big-text-color);
+   transform: rotate(90deg);
+    bottom: -32%;
+    right: 12%;
+}
+
+
+.container a:hover {
+   
+    cursor: pointer;
+    color: var(--primary-color);
+    transform: scale(1.1, 1.1);
+    transition: all 300ms ease-in-out;
+}
+
