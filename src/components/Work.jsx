@@ -16,7 +16,7 @@ const Work = () => {
           image={threedseller}
           title={"3DSeller"}
           description={
-            "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm."
+            "A web application build for a 3D Printing Business, in which users are able to see categories and category items provided by company. It also counts with an admin panel for product management such as CRUD"
           }
           technologies={project1Technologies}
         />

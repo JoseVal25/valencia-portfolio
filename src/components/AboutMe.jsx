@@ -10,18 +10,15 @@ const AboutMe = () => {
       <div className={styles.content}>
         <div className={styles.leftside}>
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            I am a passionate and dedicated individual who embarked on a journey
+            into the world of web development through a full stack bootcamp.
+            Eager to expand my knowledge and skills, I didn't stop there and
+            continued my education as a self-taught developer.
           </p>
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Through this remarkable journey, I have gained a solid foundation in
+            various programming languages, frameworks, and technologies,
+            allowing me to develop robust and user-friendly web applications.
           </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
           <ul>

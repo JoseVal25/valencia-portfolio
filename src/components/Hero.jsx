@@ -18,10 +18,9 @@ const Home = () => {
         </div>
         <div className={`thing ${styles.paragraph}`}>
           <p>
-            I’m a software engineer specializing in building (and occasionally
+            I’m a web developer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m focused
-            on building accessible, human-centered products at{" "}
-            <span>Upstatement</span>.
+            on building accessible, business centered <span>applications</span>.
           </p>
         </div>
       </div>
